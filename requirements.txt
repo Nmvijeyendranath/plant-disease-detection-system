@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+jinja2
+tensorflow
+numpy
+pillow
+python-dotenv
+google-genai
+matplotlib

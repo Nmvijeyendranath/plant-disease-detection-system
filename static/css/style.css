@@ -1,0 +1,42 @@
+/* CropGuard AI — Supplemental Stylesheet */
+/* Core design system is embedded in index.html <style> block. */
+/* This file provides extras not covered inline. */
+
+/* Firefox scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(120,200,100,0.25) transparent;
+}
+
+/* Focus outlines for accessibility */
+*:focus-visible {
+    outline: 1px solid var(--green, #5dce6a);
+    outline-offset: 2px;
+}
+
+/* Error toast */
+.error-toast {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: rgba(240, 80, 80, 0.95);
+    border: 1px solid var(--red, #f05050);
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    font-family: var(--font-ui, 'Space Grotesk', sans-serif);
+    font-size: 13px;
+    z-index: 1000;
+    border-radius: 10px;
+    animation: fadeUp 0.4s ease forwards;
+    max-width: 400px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+/* Print styles */
+@media print {
+    body::before { display: none; }
+    header { position: static; backdrop-filter: none; }
+    .chat-widget { display: none; }
+    .nav-tabs { display: none; }
+    .btn-analyze { display: none; }
+}

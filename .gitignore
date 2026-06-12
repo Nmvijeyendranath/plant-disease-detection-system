@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Datasets and large images
+datasets/
+
+# User uploads
+static/uploads/
+
+# Large model files
+*.keras
+*.h5
+*.hdf5
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
